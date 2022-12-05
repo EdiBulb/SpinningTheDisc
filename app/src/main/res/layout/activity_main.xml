@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,11 +7,26 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <com.bluehomestudio.luckywheel.LuckyWheel
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/luck_wheel"
+        app:background_color="@android:color/white"/>
+
     <Button
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="회전하기"/>
+        android:id="@+id/spin_btn"
+        android:layout_below="@+id/luck_wheel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="#9C27B0"
+        android:text="시작"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"/>
 
 
 
-</LinearLayout>
+
+</RelativeLayout>
